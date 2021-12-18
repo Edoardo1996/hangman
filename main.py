@@ -10,8 +10,8 @@ TODO:
 from datetime import datetime
 from random import randint
 import pandas as pd
-from operator import itemgetter
 
+df_players = pd.read_csv('players.csv')
 
 def get_time():
     now = datetime.now()
@@ -28,7 +28,6 @@ def get_time():
         maen = 'night'
 
     return maen
-
 
 def get_name(maen, name, first_time):
     if first_time:
